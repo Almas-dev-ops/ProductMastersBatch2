@@ -1,4 +1,4 @@
-public class Main {
+public class MainMedium {
     public static void main(String[] args) {
 
         UserData user = new UserData(21,"Max", "Maxim@gmail.com");
