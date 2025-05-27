@@ -26,27 +26,27 @@ public class NumberList
     public void getMinValue()
     {                          // 1. Возвращает наименьшее число в списке
         Integer min = Collections.min(this.numbers);
-        System.out.print("Минимальное значение в списке: " + min + "\n");
+        System.out.print("1.Минимальное значение в списке: " + min + "\n");
     }
 
     public void getMaxValue()
     {                        // 2. Возвращает наибольшее число в списке
         Integer max = Collections.max(this.numbers);
-        System.out.print("Максимальное число в списке: " + max + "\n");
+        System.out.print("2.Максимальное число в списке: " + max + "\n");
     }
 
     public void getSortOfNumbersMinToMax()
     {             // 3.Сортировка по возрастанию
         ArrayList <Integer> list = new ArrayList<>(numbers);
         Collections.sort(list);
-        System.out.println("Cписок от меньшего к большему: " + list);
+        System.out.println("3.Cписок от меньшего к большему: " + list);
     }
 
     public void getSortOfNumbersMaxToMin()
     {             // 4.Сортировка по убыванию
         ArrayList <Integer> list = new ArrayList<>(numbers);
         Collections.sort(list, Collections.reverseOrder());
-        System.out.println("Cписок от большего к меньшему: " + list);
+        System.out.println("4.Cписок от большего к меньшему: " + list);
     }
 
     public void getSerchNumber(Integer serchNumber)
@@ -54,9 +54,9 @@ public class NumberList
         this.serchNumber = serchNumber;
 
         if (this.numbers.contains(serchNumber)) { // 5 Поиск элемента в списке
-            System.out.println("Заданное число: " + serchNumber + " - находится в списке.");
+            System.out.println("5.Заданное число: " + serchNumber + " - находится в списке.");
         } else {
-            System.out.println("Заданное число: " + serchNumber + " - не найдено в списке.");
+            System.out.println("5.Заданное число: " + serchNumber + " - не найдено в списке.");
         }
     }
     public void getFilter(int threshold )               // 6.Фильтр элементов.
@@ -66,7 +66,7 @@ public class NumberList
             .filter(number -> number > threshold)
             .collect(Collectors.toList());
 
-        System.out.println("Список чисел больше заданного: " + filteredNumbers);
+        System.out.println("6.Список чисел больше заданного: " + filteredNumbers);
     }
 
 
@@ -76,7 +76,7 @@ public class NumberList
          for (int number : numbers) {
              sum += number;
          }
-         System.out.println("Сумма всех чисел элементов списка: " + sum);
+         System.out.println("7.Сумма всех чисел элементов списка: " + sum);
      }
 
 
